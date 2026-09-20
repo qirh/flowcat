@@ -483,6 +483,7 @@ mod tests {
             .build();
         assert_eq!(llm.base_url, "https://openrouter.ai/api/v1");
         assert_eq!(llm.model, "anthropic/claude-3.5");
+        assert!(llm.headers.is_empty());
     }
 
     #[test]
